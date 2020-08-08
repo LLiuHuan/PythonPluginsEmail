@@ -10,7 +10,7 @@ import os
 sys.path.append("../")
 
 
-class Week(Model_ToolBarObj):
+class Plugin1(Model_ToolBarObj):
     def __init__(self):
         # month='*',
         # day_of_week='*',
@@ -18,7 +18,7 @@ class Week(Model_ToolBarObj):
         # hour='*',
         # minute=str(item.minute)
         self.corn = {'day_of_week': '1', 'hour': 8}
-        self.filename = "Week"
+        self.filename = "Plugins1"
         self.MysqlPool = importlib.import_module("config.MySqlPool")
         self.pool = self.MysqlPool.MysqlPool(host="127.0.0.1",
                                              port=3306,
